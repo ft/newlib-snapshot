@@ -11,6 +11,7 @@ Build-Depends:
  libcloog-isl-dev,
  libisl-dev,
  quilt,
+ rename,
  texinfo,
  xz-utils
 Standards-Version: 3.9.6
