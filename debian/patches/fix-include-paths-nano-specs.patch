@@ -1,7 +1,7 @@
 Index: newlib-2.4.0.20160527/libgloss/arm/elf-nano.specs
 ===================================================================
---- newlib-2.4.0.20160527.orig/libgloss/arm/elf-nano.specs
-+++ newlib-2.4.0.20160527/libgloss/arm/elf-nano.specs
+--- newlib-2.4.0.20160527.orig/src/libgloss/arm/elf-nano.specs
++++ newlib-2.4.0.20160527/src/libgloss/arm/elf-nano.specs
 @@ -3,7 +3,7 @@
  %rename cpp		nano_cpp
  
