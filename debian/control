@@ -1,22 +1,20 @@
-Source: newlib
+Source: newlib-snapshot
 Section: devel
 Priority: extra
-Maintainer: Agustin Henze <tin@debian.org>
+Maintainer: Frank Terbeck <ft@bewatermyfriend.org>
 Build-Depends:
- debhelper (>= 9),
- texinfo,
- dpkg-dev (>= 1.16.0),
  autotools-dev,
+ debhelper (>= 9),
  dejagnu,
- gcc-arm-none-eabi,
- xz-utils,
- libisl-dev,
+ dpkg-dev (>= 1.16.0),
+ gcc-arm-none-eabi-snapshot,
  libcloog-isl-dev,
+ libisl-dev,
  quilt,
+ texinfo,
+ xz-utils
 Standards-Version: 3.9.6
 Homepage: https://sourceware.org/newlib/
-Vcs-Git: git://anonscm.debian.org/collab-maint/newlib.git
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=collab-maint/newlib.git
 
 Package: libnewlib-dev
 Architecture: all

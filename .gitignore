@@ -1,0 +1,6 @@
+.*
+!.gitignore
+!.gitmodules
+*~
+\#*\#
+debian/files

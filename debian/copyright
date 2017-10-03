@@ -1,3 +1,9 @@
+This package is based on the original newlib package from the Debian
+project. The original copyright notice follows. All additional changes
+submit to the same terms.
+
+------------------------------------------------------------------------
+
 This package was Debianised by Shaun Jackman <sjackman@debian.org> on
 Sat, 13 Nov 2004 11:59:20 -0800.
 
