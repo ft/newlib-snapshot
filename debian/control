@@ -17,13 +17,14 @@ Build-Depends:
 Standards-Version: 3.9.6
 Homepage: https://sourceware.org/newlib/
 
-Package: libnewlib-dev
+Package: libnewlib-snapshot-dev
 Architecture: all
 Section: libdevel
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Breaks: libnewlib0
-Replaces: libnewlib0
-Suggests: libnewlib-arm-none-eabi, gcc-arm-none-eabi
+Replaces: libnewlib0, libnewlib-dev
+Conflicts: libnewlib-dev
+Suggests: libnewlib-snapshot-arm-none-eabi, gcc-arm-none-eabi-snapshot
 Description: C library and math library intended for use on embedded systems
  Newlib is a C library and math library intended for use on embedded systems.
  It is a conglomeration of several library parts, all under free software
@@ -31,11 +32,13 @@ Description: C library and math library intended for use on embedded systems
  .
  This package contains the newlib headers.
 
-Package: libnewlib-doc
+Package: libnewlib-snapshot-doc
 Architecture: all
 Section: doc
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Recommends: libnewlib-dev
+Recommends: libnewlib-snapshot-dev
+Conflicts: libnewlib-doc
+Replaces: libnewlib-doc
 Description: C library and math library intended for use on embedded systems (doc)
  Newlib is a C library and math library intended for use on embedded systems.
  It is a conglomeration of several library parts, all under free software
@@ -43,12 +46,14 @@ Description: C library and math library intended for use on embedded systems (do
  .
  This package contains the newlib documentation.
 
-Package: libnewlib-arm-none-eabi
+Package: libnewlib-snapshot-arm-none-eabi
 Architecture: all
 Section: libs
 Depends: ${shlibs:Depends}, ${misc:Depends}, libnewlib-dev (= ${binary:Version})
-Recommends: gcc-arm-none-eabi, libstdc++-arm-none-eabi-newlib
-Suggests: libnewlib-doc
+Recommends: gcc-arm-none-eabi-snapshot, libstdc++-arm-none-eabi-newlib-snapshot
+Conflicts: libnewlib-arm-none-eabi
+Replaces: libnewlib-arm-none-eabi
+Suggests: libnewlib-snapshot-doc
 Description: C library and math library compiled for bare metal using Cortex A/R/M
  Newlib is a C library and math library intended for use on embedded systems.
  It is a conglomeration of several library parts, all under free software
@@ -57,10 +62,12 @@ Description: C library and math library compiled for bare metal using Cortex A/R
  This package contains the newlib library compiled for Cortex-A*,
  Cortex-R4/R5/R7 and Cortex-M0/M0+/M3/M4 targets.
 
-Package: newlib-source
+Package: newlib-snapshot-source
 Architecture: all
 Recommends: xz-utils
 Depends: ${misc:Depends}
+Conflicts: newlib-source
+Replaces: newlib-source
 Description: C library and math library intended for use on embedded systems (source)
  Newlib is a C library and math library intended for use on embedded systems.
  It is a conglomeration of several library parts, all under free software
