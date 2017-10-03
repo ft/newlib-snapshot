@@ -49,7 +49,7 @@ Description: C library and math library intended for use on embedded systems (do
 Package: libnewlib-snapshot-arm-none-eabi
 Architecture: all
 Section: libs
-Depends: ${shlibs:Depends}, ${misc:Depends}, libnewlib-dev (= ${binary:Version})
+Depends: ${shlibs:Depends}, ${misc:Depends}, libnewlib-snapshot-dev (= ${binary:Version})
 Recommends: gcc-arm-none-eabi-snapshot, libstdc++-arm-none-eabi-newlib-snapshot
 Conflicts: libnewlib-arm-none-eabi
 Replaces: libnewlib-arm-none-eabi
