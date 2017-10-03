@@ -4,3 +4,6 @@
 *~
 \#*\#
 debian/files
+debian/*.log
+build
+build_nano
