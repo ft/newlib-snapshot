@@ -1,13 +1,13 @@
-Index: newlib-2.4.0.20160527/libgloss/arm/elf-nano.specs
+Index: newlib-snapshot/src/libgloss/arm/elf-nano.specs
 ===================================================================
---- newlib-2.4.0.20160527.orig/src/libgloss/arm/elf-nano.specs
-+++ newlib-2.4.0.20160527/src/libgloss/arm/elf-nano.specs
+--- newlib-snapshot.orig/src/libgloss/arm/elf-nano.specs
++++ newlib-snapshot/src/libgloss/arm/elf-nano.specs
 @@ -3,7 +3,7 @@
- %rename cpp		nano_cpp
+ %rename cpp_unique_options		nano_cpp_unique_options
  
- *cpp:
---isystem =/include/newlib-nano %(nano_cpp)
-+-isystem /usr/include/newlib/nano %(nano_cpp)
+ *cpp_unique_options:
+--isystem =/include/newlib-nano %(nano_cpp_unique_options)
++-isystem /usr/include/newlib/nano %(nano_cpp_unique_options)
  
  *nano_libc:
  -lc_nano
