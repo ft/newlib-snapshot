@@ -1,6 +1,8 @@
 newlib-snapshot (20180128-1) unstable; urgency=medium
 
   * Update upstream git submodule state.
+  * Update and refresh patches for new snapshot.
+  * Make snapshot build with bare metal arm compilers.
 
  -- Frank Terbeck <ft@bewatermyfriend.org>  Sun, 28 Jan 2018 21:24:26 +0100
 
