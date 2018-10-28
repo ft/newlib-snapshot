@@ -1,21 +1,22 @@
 Source: newlib-snapshot
 Section: devel
-Priority: extra
+Priority: optional
 Maintainer: Frank Terbeck <ft@bewatermyfriend.org>
 Build-Depends:
- autotools-dev,
  debhelper (>= 9),
- dejagnu,
+ texinfo,
  dpkg-dev (>= 1.16.0),
+ autotools-dev,
+ dejagnu,
  gcc-arm-none-eabi-snapshot,
+ xz-utils,
  libcloog-isl-dev,
- libisl-dev,
  quilt,
  rename,
- texinfo,
- xz-utils
-Standards-Version: 3.9.6
+Standards-Version: 4.2.0
 Homepage: https://sourceware.org/newlib/
+Vcs-Git: https://github.com/ft/newlib-snapshot.git
+Vcs-Browser: https://github.com/ft/newlib-snapshot
 
 Package: libnewlib-snapshot-dev
 Architecture: all
@@ -61,16 +62,3 @@ Description: C library and math library compiled for bare metal using Cortex A/R
  .
  This package contains the newlib library compiled for Cortex-A*,
  Cortex-R4/R5/R7 and Cortex-M0/M0+/M3/M4 targets.
-
-Package: newlib-snapshot-source
-Architecture: all
-Recommends: xz-utils
-Depends: ${misc:Depends}
-Conflicts: newlib-source
-Replaces: newlib-source
-Description: C library and math library intended for use on embedded systems (source)
- Newlib is a C library and math library intended for use on embedded systems.
- It is a conglomeration of several library parts, all under free software
- licenses that make them easily usable on embedded products.
- .
- This package contains the newlib library source tarball.
