@@ -1,3 +1,2 @@
-make-nano-stdio-build-again.patch
 reproducible-builds-locale.patch
 fix-include-paths-nano-specs.patch
