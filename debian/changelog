@@ -1,3 +1,12 @@
+newlib-snapshot (20181029-1) unstable; urgency=medium
+
+  * Update upstream git submodule state.
+  * Fix Dependencies.
+  * Bump Standards-Version.
+  * Drop stdio Patch.
+
+ -- Frank Terbeck <ft@bewatermyfriend.org>  Mon, 29 Oct 2018 00:45:06 +0100
+
 newlib-snapshot (20180128-1) unstable; urgency=medium
 
   * Update upstream git submodule state.
